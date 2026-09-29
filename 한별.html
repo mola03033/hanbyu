@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ⅰ단원 시기별 정리</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@600;800&family=IBM+Plex+Sans+KR:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky-1:#EAF5F4; --sky-2:#DCEDEC; --sky-4:#7FB0AC;
+  --deep:#1E3A3C; --deep-2:#2F5457; --slate:#63807F; --mute:#8AA3A2;
+  --line:#CBDEDC; --bg:#F6FBFA; --card:#FFFFFF; --accent:#2E6F6B;
+  --warn:#B5653C; --warn-bg:#FBF0EA; --ok-bg:#E9F5F0;
+  --c10:#2E6F6B; --c20:#3F6FA0; --c30:#9A5B3C;
+  --r:14px; --sh:0 1px 2px rgba(30,58,60,.05),0 6px 18px rgba(30,58,60,.06);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12201F;--card:#1A2B2A;--deep:#E3F0EE;--deep-2:#C3D9D6;--slate:#9DB6B3;--mute:#7E9895;--line:#2C4442;--sky-1:#1F3331;--sky-2:#243B39;--ok-bg:#1D3A30;--warn-bg:#3A2A20;--accent:#7CC2BB;--warn:#E09A72}}
+:root[data-theme="dark"]{--bg:#12201F;--card:#1A2B2A;--deep:#E3F0EE;--deep-2:#C3D9D6;--slate:#9DB6B3;--mute:#7E9895;--line:#2C4442;--sky-1:#1F3331;--sky-2:#243B39;--ok-bg:#1D3A30;--warn-bg:#3A2A20;--accent:#7CC2BB;--warn:#E09A72}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0}
+body{background:var(--bg);color:var(--deep);font-family:"IBM Plex Sans KR",system-ui,sans-serif;font-weight:300;line-height:1.8;letter-spacing:-.01em;padding-bottom:70px}
+h1,h2,h3,h4{font-family:"Hahmlet",serif;font-weight:800;letter-spacing:-.02em;line-height:1.35;margin:0}
+b{font-weight:600;color:var(--accent)}
+header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.hw{max-width:860px;margin:0 auto;padding:12px 16px 0}
+.top{display:flex;align-items:center;gap:10px}
+.top h1{font-size:17px;flex:1}
+.top .sub{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--mute)}
+.hide{border:1px solid var(--line);background:var(--card);color:var(--slate);border-radius:99px;padding:6px 12px;font-size:12px;cursor:pointer;font-family:inherit;white-space:nowrap}
+.hide.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;margin-top:8px}
+nav::-webkit-scrollbar{display:none}
+nav button{flex:0 0 auto;background:none;border:0;border-bottom:3px solid transparent;color:var(--mute);font-family:"Hahmlet",serif;font-weight:600;font-size:14px;padding:8px 11px 9px;cursor:pointer}
+nav button.on{color:var(--deep);border-color:var(--accent)}
+nav button[data-t="d10"].on{border-color:var(--c10)}
+nav button[data-t="d20"].on{border-color:var(--c20)}
+nav button[data-t="d30"].on{border-color:var(--c30)}
+main{max-width:860px;margin:0 auto;padding:20px 16px}
+.view{display:none}.view.on{display:block}
+.hero{border-radius:var(--r);padding:20px 18px;color:#fff;margin-bottom:16px}
+.hero.d10{background:linear-gradient(135deg,var(--c10),#4F9590)}
+.hero.d20{background:linear-gradient(135deg,var(--c20),#6C93BD)}
+.hero.d30{background:linear-gradient(135deg,var(--c30),#C08662)}
+.hero.all{background:linear-gradient(135deg,#2E6F6B,#7FB0AC)}
+.hero .k{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;opacity:.85}
+.hero h2{font-size:24px;margin:4px 0 8px;color:#fff}
+.hero p{margin:0;font-size:13.5px;line-height:1.75}
+.hero b{color:#fff;border-bottom:1px solid rgba(255,255,255,.55)}
+.strip{display:flex;gap:6px;overflow-x:auto;padding:2px 0 12px;scrollbar-width:none}
+.strip::-webkit-scrollbar{display:none}
+.strip span{flex:0 0 auto;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:6px 10px;font-size:12px;line-height:1.4}
+.strip span i{display:block;font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--mute)}
+.sec{margin:26px 0 12px;display:flex;align-items:center;gap:9px}
+.sec h3{font-size:17px}
+.sec .tag{font-family:"IBM Plex Mono",monospace;font-size:10px;padding:3px 8px;border-radius:99px;background:var(--sky-2);color:var(--deep-2)}
+.ev{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:15px 16px;margin-bottom:11px;box-shadow:var(--sh)}
+.eh{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;margin-bottom:8px}
+.eh .yr{font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:600;color:var(--c10);background:var(--sky-1);padding:2px 7px;border-radius:6px}
+#v-d20 .eh .yr{color:var(--c20)} #v-d30 .eh .yr{color:var(--c30)}
+.eh h4{font-size:16px}
+dl{margin:0;display:grid;grid-template-columns:62px 1fr;gap:5px 10px;font-size:13.8px}
+dt{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--mute);padding-top:4px;font-weight:600}
+dd{margin:0}
+dd ul{margin:0;padding-left:17px}
+.pt{margin:10px 0 0;padding:9px 12px;background:var(--warn-bg);color:var(--warn);border-radius:10px;font-size:12.8px;line-height:1.7}
+.pt::before{content:"시험 포인트 · ";font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:12.8px;background:var(--card)}
+th,td{border:1px solid var(--line);padding:8px 9px;vertical-align:top;text-align:left;line-height:1.6}
+th{background:var(--sky-1);font-weight:600;font-size:12px}
+.tw{overflow-x:auto;margin-bottom:14px;border-radius:var(--r)}
+.tw table{min-width:560px}
+.trap{background:var(--card);border:1px dashed var(--warn);border-radius:var(--r);padding:14px 16px;margin-top:18px}
+.trap h4{font-size:15px;color:var(--warn);margin-bottom:6px}
+.trap ul{margin:0;padding-left:18px;font-size:13.3px}
+.box{background:var(--sky-1);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;font-size:13.5px;margin-bottom:12px}
+.box h4{font-size:15px;margin-bottom:6px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
+.pair div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:13px}
+.pair em{display:block;font-style:normal;font-family:"Hahmlet",serif;font-weight:600;font-size:14px;margin-bottom:3px}
+.next{display:block;width:100%;margin-top:22px;padding:13px;border-radius:12px;border:1px solid var(--line);background:var(--card);font-family:"Hahmlet",serif;font-weight:600;font-size:14px;color:var(--accent);cursor:pointer}
+body.quiz .ev dd, body.quiz .ev .pt{filter:blur(6px);user-select:none}
+body.quiz .ev.show dd, body.quiz .ev.show .pt{filter:none}
+body.quiz .ev{cursor:pointer}
+.qhint{display:none;font-size:12.5px;color:var(--accent);background:var(--ok-bg);padding:8px 12px;border-radius:10px;margin-bottom:12px}
+body.quiz .qhint{display:block}
+@media (max-width:520px){dl{grid-template-columns:1fr;gap:1px}dt{padding-top:6px}.pair{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="hw">
+  <div class="top"><h1>Ⅰ단원 시기별 정리</h1><span class="sub">교과서 10–62쪽</span><button class="hide" id="hideBtn">가리기</button></div>
+  <nav id="nav">
+    <button data-t="all" class="on">한눈에</button>
+    <button data-t="d10">1910년대</button>
+    <button data-t="d20">1920년대</button>
+    <button data-t="d30">1930~45</button>
+    <button data-t="cmp">비교·짝</button>
+  </nav>
+</div></header>
+
+<main>
+<p class="qhint">가리기 모드 — 제목만 보고 배경·내용·결과를 말해 본 뒤, 카드를 눌러 확인하세요.</p>
+
+<!-- ══════════ 한눈에 ══════════ -->
+<section class="view on" id="v-all">
+  <div class="hero all">
+    <div class="k">OVERVIEW</div>
+    <h2>시기는 세 덩어리</h2>
+    <p>통치 방식이 바뀐 계기로 나눕니다. <b>1910 국권 피탈</b> → <b>1919 3·1 운동</b> → <b>1931 만주 사변·1937 중일 전쟁</b>. 이 기준으로 같은 시기의 통치·경제·민족 운동·사회 모습을 한 덩어리로 묶어 외우세요.</p>
+  </div>
+  <div class="tw"><table>
+    <tr><th></th><th>1910년대</th><th>1920년대</th><th>1930~1945</th></tr>
+    <tr><th>통치</th><td><b>무단 통치</b><br>헌병 경찰, 태형령</td><td><b>‘문화 정치’</b><br>보통 경찰, 치안 유지법</td><td><b>민족 말살 · 전시 동원</b><br>창씨개명, 국가 총동원법</td></tr>
+    <tr><th>계기</th><td>1910 국권 피탈</td><td>1919 3·1 운동</td><td>대공황 → 만주 사변(1931) → 중일 전쟁(1937)</td></tr>
+    <tr><th>경제</th><td><b>토지 조사 사업</b>, 회사령(허가제)</td><td><b>산미 증식 계획</b>, 회사령 폐지(신고제)</td><td>공업화·남면북양·농촌 진흥 → <b>병참 기지화</b>, 공출·배급</td></tr>
+    <tr><th>민족 운동</th><td>비밀 결사, 국외 독립운동 기지 → <b>3·1 운동</b>, 임시 정부</td><td>봉오동·청산리, 의열단, 실력 양성·자치 운동, 6·10 만세, <b>신간회</b>, 광주 학생</td><td>신간회 해소, 한인 애국단(이봉창·윤봉길), 한글·역사 지키기</td></tr>
+    <tr><th>사회·문화</th><td>언론·집회 완전 금지</td><td>신문·잡지, 아리랑, 라디오, 형평·암태도·원산 총파업</td><td>브나로드, 조선어 학회 사건, 전쟁 선전 가요</td></tr>
+  </table></div>
+  <div class="box">
+    <h4>내신은 이렇게 나옵니다</h4>
+    “(가) 시기에 볼 수 있는 모습으로 적절한 것은?” → 사료 속 단서(헌병·태형 / 치안 유지법·도 평의회 / 황국 신민 서사·공출)로 <b>시기를 먼저 특정</b>하고, 보기 중 <b>같은 시기</b>의 것을 고르는 방식입니다. 각 시기 끝의 <b>‘이 시기가 아닌 것’</b> 목록이 그대로 오답 선지입니다.
+  </div>
+  <div class="box">
+    <h4>공부법</h4>
+    ① 시기 탭 하나를 처음부터 끝까지 읽기 → ② 오른쪽 위 <b>가리기</b>를 켜고 제목만 보며 배경·내용·결과를 입으로 말하기 → ③ 막힌 카드만 눌러 확인 → ④ 마지막에 <b>비교·짝</b> 탭.
+  </div>
+  <button class="next" data-go="d10">1910년대부터 시작 →</button>
+</section>
+
+<!-- ══════════ 1910년대 ══════════ -->
+<section class="view" id="v-d10">
+  <div class="hero d10">
+    <div class="k">1910 – 1919</div>
+    <h2>무단 통치기</h2>
+    <p>군인(헌병)이 경찰 노릇을 하고 재판 없이 매를 때리던 시기. 경제는 <b>땅(토지 조사 사업)</b>과 <b>회사(회사령)</b>로 수탈 기반을 만들었고, 한국인은 국내 <b>비밀 결사</b>와 국외 <b>독립운동 기지</b>로 버티다 <b>3·1 운동</b>으로 폭발합니다.</p>
+  </div>
+  <div class="strip">
+    <span><i>1905</i>러일 전쟁</span><span><i>1910</i>국권 피탈·즉결례·회사령</span><span><i>1910~18</i>토지 조사 사업</span><span><i>1911</i>1차 교육령</span><span><i>1912</i>태형령</span><span><i>1914</i>1차 대전·경원/호남선</span><span><i>1917</i>대동단결 선언</span><span><i>1918</i>한인 사회당</span><span><i>1919</i>2·8 → 3·1 → 임시 정부</span>
+  </div>
+
+  <div class="sec"><span class="tag">배경</span><h3>어떻게 식민지가 되었나</h3></div>
+  <div class="ev"><div class="eh"><span class="yr">19C 후반~1910</span><h4>제국주의와 국권 피탈</h4></div>
+    <dl><dt>배경</dt><dd>열강의 식민 통치가 정점. 겉으로는 ‘문명화’, 실제 목적은 <b>자원·노동력 수탈</b>. 영국(인도), 프랑스(인도차이나 연방), 러시아(연해주), 미국(필리핀), 네덜란드(인도네시아).</dd>
+    <dt>내용</dt><dd>일본은 메이지 유신 뒤 늦게 합류 → <b>1905 러일 전쟁 승리</b>로 사할린 남부·랴오둥반도 조차지 획득, 한국 지배 강화 → 보호국 → <b>1910 식민지</b></dd>
+    <dt>결과</dt><dd>강제 병합은 <b>열강의 묵인</b> 아래 이루어짐</dd></dl>
+    <p class="pt">‘열강의 묵인’은 서술형 단골 표현. 러일 전쟁 전리품은 ‘사·랴’.</p></div>
+
+  <div class="sec"><span class="tag">통치</span><h3>무단 통치</h3></div>
+  <div class="ev"><div class="eh"><span class="yr">1910</span><h4>조선 총독부와 중추원</h4></div>
+    <dl><dt>총독부</dt><dd>식민 통치 최고 기구. 총독은 <b>육·해군 대장</b> 출신, <b>입법·사법·행정 + 군사권</b>까지 장악. 주요 관리는 대부분 일본인. 청사는 경복궁을 헐고 지음(1916 착공~1926 완공, 1995 철거).</dd>
+    <dt>중추원</dt><dd>한국인도 정치에 참여한다고 선전하려 만든 <b>자문 기관</b>. 실권 없음, 참여자도 이완용·송병준 등 친일파.</dd></dl>
+    <p class="pt">총독 권한을 ‘셋’으로 줄인 선지는 오답. 연상어 「입사행군」.</p></div>
+
+  <div class="ev"><div class="eh"><span class="yr">1910~</span><h4>헌병 경찰제</h4></div>
+    <dl><dt>내용</dt><dd><b>군인인 헌병</b>이 경찰 업무까지 담당. 전국에 주재소·파출소, 독립운동 탄압.</dd>
+    <dt>특징</dt><dd>독립운동만이 아니라 <b>납세 강요·위생 단속</b> 등 <b>일상 전반</b>을 감시. 경무부와 헌병대 간판이 한곳에 나란히.</dd>
+    <dt>의미</dt><dd>지배가 <b>군사적 성격</b>이었다는 핵심 증거 → ‘무단 통치’</dd></dl></div>
+
+  <div class="ev"><div class="eh"><span class="yr">1910 · 1912</span><h4>범죄 즉결례 · 조선 태형령</h4></div>
+    <dl><dt>즉결례</dt><dd>(1910) 헌병 분대장·경찰서장이 <b>재판 없이</b> 즉시 처벌</dd>
+    <dt>태형령</dt><dd>(1912) 태로 볼기를 때리는 형벌. <b>제13조 “조선인에 한해 적용”</b> → 민족 차별</dd>
+    <dt>사례</dt><dd>덜 익은 감을 판 과일 장수 태형 15대, 웃통 벗고 일한 인부 태형 10대씩(《매일신보》) → 통제가 <b>일상</b>까지</dd></dl>
+    <p class="pt">“태형령은 일본인에게도 적용”, “재판을 거쳐 집행” → 둘 다 오답.</p></div>
+
+  <div class="ev"><div class="eh"><span class="yr">1910년대</span><h4>언론·단체·교육 통제</h4></div>
+    <dl><dt>언론</dt><dd>언론·출판·집회·결사의 자유를 <b>아예 허용 안 함</b>. 총독부 기관지 <b>《매일신보》만</b> 남기고 한국어 신문 폐간, 역사서·잡지 규제.</dd>
+    <dt>단체</dt><dd>애국 계몽 단체·학회는 물론 친일 단체 <b>일진회마저 해산</b></dd>
+    <dt>분위기</dt><dd>관리뿐 아니라 <b>교사까지 제복에 칼</b>(염상섭 〈만세전〉 “사벨 찬 선생님”)</dd>
+    <dt>교육</dt><dd><b>제1차 조선 교육령(1911)</b>: 일본어·일본 역사를 ‘국어’·‘국사’로. 한국인은 초등·<b>실업 교육</b> 위주, 고등 교육 차단. 보통학교 <b>4년제</b> vs 일본인 소학교 6년제. 1919년 취학률 일본인 <b>91.5%</b> : 한국인 <b>3.7%</b>. 사립 학교·서당 탄압.</dd></dl>
+    <p class="pt">1910년대 = ‘전면 금지’, 1920년대 = ‘일부 허용’. 가장 많이 나오는 구분.</p></div>
+
+  <div class="sec"><span class="tag">경제</span><h3>수탈의 기반 만들기</h3></div>
+  <div class="ev"><div class="eh"><span class="yr">1910~1918</span><h4>토지 조사 사업</h4></div>
+    <dl><dt>목적</dt><dd>① <b>지세</b>를 안정적으로 걷어 통치 재정 마련 ② <b>일본인</b>의 토지 소유를 쉽게</dd>
+    <dt>방식</dt><dd>정해진 기간 안에 <b>신고</b>해야 소유권 인정(토지 조사령). 소유권만 확정하고 농민의 <b>경작 관행은 불인정</b>.</dd>
+    <dt>결과</dt><dd>많은 토지가 <b>국유지</b>로 편입(소유권 분쟁 다수) → <b>동양 척식 주식회사</b>·일본인 지주에게 매각. 총독부 지세 수입 증가(1915년 약 977만 원 → 1922년 약 1,483만 원).</dd></dl>
+    <p class="pt">‘농민에게 유리’ → 오답. 1920~1934 산미 증식 계획과 기간 혼동 주의.</p></div>
+
+  <div class="ev"><div class="eh"><span class="yr">1910</span><h4>회사령</h4></div>
+    <dl><dt>내용</dt><dd>회사 설립에 <b>조선 총독의 허가</b>(허가제). 조건 위반 시 총독이 <b>해산</b> 명령.</dd>
+    <dt>목적</dt><dd>한국인 기업 활동 제한 + 일본 기업의 <b>선별적</b> 진출 지원</dd>
+    <dt>결과</dt><dd>한국인 공업 회사 자본 비중 1911년 17.0% → 1917년 <b>12.7%</b>, 일본인 32.0% → <b>83.2%</b></dd></dl>
+    <p class="pt">1910 허가제 → 1920 폐지·신고제. 방향을 뒤집은 선지 주의.</p></div>
+
+  <div class="ev"><div class="eh"><span class="yr">1910년대</span><h4>금융·교통 장악</h4></div>
+    <dl><dt>금융</dt><dd>한국은행(1909, 통감부) → <b>조선은행</b>(조선은행권 발행) / <b>조선 식산 은행</b>(산업 개발 자금)</dd>
+    <dt>철도</dt><dd>경인(1899)·경부(1905)·경의(1906) → <b>1914 경원선·호남선</b> = 서울 중심 <b>X 자형</b>. 부산·인천·목포 항만 확충.</dd>
+    <dt>의미</dt><dd>일본으로 가는 <b>항구로 연결 = 수탈 통로</b>, 만주까지 이어져 <b>대륙 침략 발판</b></dd></dl></div>
+
+  <div class="sec"><span class="tag">민족 운동</span><h3>버티고, 준비하고, 폭발하다</h3></div>
+  <div class="ev"><div class="eh"><span class="yr">1910년대</span><h4>비밀 결사 · 국외 독립운동 기지</h4></div>
+    <dl><dt>국내</dt><dd>무단 통치로 공개 활동 불가 → <b>비밀 결사</b></dd>
+    <dt>국외</dt><dd>목표는 <b>독립군 양성</b>. 이회영 6형제 일가가 재산을 처분해 만주로.<ul><li><b>북간도</b>: 명동 학교, 간민회, 대종교 계열 <b>중광단</b>(→ 북로 군정서)</li><li><b>연해주</b>: 블라디보스토크 <b>신한촌</b>, 권업회, 이상설·이동녕 <b>대한 광복군 정부</b></li><li><b>상하이</b>: 신한 청년당</li></ul></dd></dl></div>
+
+  <div class="ev"><div class="eh"><span class="yr">1914~1919</span><h4>세계정세의 변화</h4></div>
+    <dl><dt>1차 대전</dt><dd>1914~1918. 일본은 <b>영일 동맹</b>으로 <b>연합국</b> 참전 → 승전국, 국제 연맹 상임 이사국, 독일의 태평양 식민지 위임 통치</dd>
+    <dt>민족 자결</dt><dd>윌슨 14개조의 <b>민족 자결주의</b>. 동유럽 등 일부만 적용, <b>승전국 식민지(한국)는 제외</b> — 그래도 약소민족에 희망 → 3·1 운동 배경</dd>
+    <dt>러시아</dt><dd>1917 러시아 혁명, 레닌의 민족 해방 지원 선언, 1919 <b>코민테른</b></dd>
+    <dt>한인 사회당</dt><dd>1918 <b>이동휘</b>, 한국인 최초의 사회주의 정당</dd>
+    <dt>대동단결</dt><dd>1917 상하이 〈대동단결 선언〉: 황제권 소멸, <b>주권은 국민</b>에게, 최고 기관 수립 제안 → 임시 정부의 바탕</dd></dl>
+    <p class="pt">“일본이 1차 대전 후 식민지를 잃었다” → 오답(잃은 건 독일).</p></div>
+
+  <div class="ev"><div class="eh"><span class="yr">1919. 3. 1</span><h4>3·1 운동</h4></div>
+    <dl><dt>배경</dt><dd>① 민족 자결주의·레닌 선언 ② 신한 청년당이 <b>김규식</b>을 파리 강화 회의에 파견 ③ 도쿄 유학생 <b>2·8 독립 선언</b> ④ <b>고종</b> 서거</dd>
+    <dt>준비</dt><dd>천도교·기독교·불교 지도자와 학생. 손병희·이승훈·한용운 등 <b>민족 대표 33인</b> 명의 독립 선언서</dd>
+    <dt>전개</dt><dd><ul><li>민족 대표: <b>태화관</b> 선언식 → 연행</li><li>학생·시민: <b>탑골 공원</b> 선언 → 거리 시위</li><li>상인 철시, 노동자 <b>동맹 파업</b>, 평양·원산·의주 등 도시 → <b>유관순</b> 등 귀향 학생이 <b>농촌</b>으로</li><li>3월 말~4월 초 절정, <b>농민·노동자</b> 폭발적 참여, 일부는 식민 기관 공격 / 참여 <b>100만 명</b> 이상</li></ul></dd>
+    <dt>탄압</dt><dd>1919. 4. 경기도 <b>제암리</b> 학살</dd>
+    <dt>의의</dt><dd>최대 규모, <b>모든 계층</b> 참여 → ① <b>‘문화 정치’</b> 전환 ② <b>임시 정부</b> 수립 계기 ③ 세계 약소민족 운동 자극</dd></dl>
+    <p class="pt">태화관↔탑골 공원 바꾸기, “농민 참여 없음” → 오답. 고종=3·1, 순종=6·10.</p></div>
+
+  <div class="ev"><div class="eh"><span class="yr">1919. 3~9</span><h4>대한민국 임시 정부 수립</h4></div>
+    <dl><dt>배경</dt><dd>3·1 운동 후 독립운동의 <b>구심점</b> 필요</dd>
+    <dt>과정</dt><dd>연해주 <b>대한 국민 의회</b>(3월) · 국내 <b>한성 정부</b>(4월) · 상하이 임시 정부 → <b>1919. 9. 상하이</b>에서 통합</dd>
+    <dt>활동</dt><dd><ul><li>국내 연결: <b>연통제</b>(비밀 행정), <b>교통국</b>(통신)</li><li>자금: <b>독립 공채</b>, 의연금</li><li>외교(주력): 김규식 전권 대사, 미국에 <b>구미 위원부</b>, 이승만의 여론화 노력</li><li>《독립신문》, 《한일 관계 사료집》 / 육군 주만 참의부 직속 편성</li></ul></dd></dl>
+    <p class="pt">연통제=행정, 교통국=통신. 역할 바꾼 선지 주의.</p></div>
+
+  <div class="trap"><h4>1910년대가 아닌 것 (오답 선지)</h4><ul>
+    <li>보통 경찰제, 치안 유지법(1925), 도 평의회 → 1920년대</li>
+    <li>《동아일보》·《조선일보》 창간, 산미 증식 계획, 회사령 폐지 → 1920년대</li>
+    <li>신간회, 물산 장려 운동, 봉오동·청산리 → 1920년대</li>
+    <li>창씨개명, 황국 신민 서사, 국가 총동원법 → 1930~40년대</li></ul></div>
+  <button class="next" data-go="d20">1920년대로 →</button>
+</section>
+
+<!-- ══════════ 1920년대 ══════════ -->
+<section class="view" id="v-d20">
+  <div class="hero d20">
+    <div class="k">1919 – 1929</div>
+    <h2>‘문화 정치’기</h2>
+    <p>3·1 운동에 놀란 일제가 <b>얼굴만 바꾼</b> 시기. 경제는 <b>쌀(산미 증식 계획)</b>을 가져가고 일본 자본을 들였습니다. 민족 운동은 국외 <b>무장·의열 투쟁</b>과 국내 <b>실력 양성</b>으로 갈라졌다가 <b>신간회</b>로 다시 모이고, 사회 곳곳에서 <b>대중 운동</b>이 터집니다.</p>
+  </div>
+  <div class="strip">
+    <span><i>1920</i>회사령 폐지·산미 증식·봉오동·청산리·물산 장려</span><span><i>1921</i>자유시 참변·조선어 연구회</span><span><i>1923</i>국민 대표 회의·조선 혁명 선언·암태도·형평사·간토 대지진</span><span><i>1924</i>민족적 경륜</span><span><i>1925</i>치안 유지법·조선 공산당·박은식</span><span><i>1926</i>6·10 만세·아리랑</span><span><i>1927</i>신간회·근우회·경성 방송국</span><span><i>1929</i>광주 학생·원산 총파업·문자 보급</span>
+  </div>
+
+  <div class="sec"><span class="tag">통치</span><h3>‘문화 정치’ — 겉과 속</h3></div>
+  <div class="ev"><div class="eh"><span class="yr">1919~</span><h4>‘문화 정치’의 등장</h4></div>
+    <dl><dt>배경</dt><dd><b>3·1 운동</b> → 무단 통치로는 지배 유지 불가. 한국 문화·관습 존중을 <b>선전</b>.</dd>
+    <dt>목적</dt><dd>통치 완화가 아니라 <b>지배의 지속</b></dd></dl></div>
+  <div class="tw"><table>
+    <tr><th>겉으로 바꾼 것</th><th>실제</th></tr>
+    <tr><td>문관도 총독이 될 수 있게 규정 변경</td><td>문관 총독 <b>한 명도 없음</b></td></tr>
+    <tr><td>헌병 경찰제 → <b>보통 경찰제</b>, 관리·교사 칼 착용 폐지</td><td>경찰 수 <b>오히려 증가</b></td></tr>
+    <tr><td>언론·출판·집회·결사 <b>일부</b> 허용, 《동아일보》·《조선일보》 창간</td><td>검열로 기사 <b>삭제·정간</b></td></tr>
+    <tr><td>도 평의회, 부·면 협의회 의원 일부 선거</td><td><b>의결권 없는 자문 기구</b>, 선거권은 일정액 이상 <b>납세자</b>만 (1930년대 도회·부회·읍회로 개편, 일부 의결권 — 참여는 여전히 제한)</td></tr>
+  </table></div>
+  <div class="ev"><div class="eh"><span class="yr">1925</span><h4>치안 유지법 · 민족 분열 정책</h4></div>
+    <dl><dt>치안 유지법</dt><dd>사상·표현의 자유 억압, 민족 운동·<b>사회주의 운동</b> 탄압 → ‘문화 정치’가 <b>위장</b>이라는 증거</dd>
+    <dt>본질</dt><dd>양반·실업가·교육가·종교인 등에 <b>친일 세력</b> 육성, 자산가를 자문 기구에, 친일 단체 후원 → <b>민족 분열 정책</b></dd></dl>
+    <p class="pt">서술형 결론: “문화 정치는 친일파를 길러 민족을 분열시키려는 기만적 통치였다.”</p></div>
+
+  <div class="sec"><span class="tag">경제</span><h3>쌀과 자본</h3></div>
+  <div class="ev"><div class="eh"><span class="yr">1920</span><h4>회사령 폐지</h4></div>
+    <dl><dt>배경</dt><dd>1차 대전으로 일본 경제 성장, <b>자본 축적</b></dd>
+    <dt>내용</dt><dd>허가제 → <b>신고제</b></dd>
+    <dt>결과</dt><dd><b>일본 자본</b> 본격 진출(한국인 위한 조치 아님). 이 위기감이 물산 장려 운동으로 이어짐.</dd></dl></div>
+  <div class="ev"><div class="eh"><span class="yr">1920~1934</span><h4>산미 증식 계획</h4></div>
+    <dl><dt>배경</dt><dd>일본의 도시화·산업화로 쌀 부족 → 쌀값 폭등, <b>쌀 소동</b> → 일본 식량 문제를 한국에서 해결</dd>
+    <dt>방법</dt><dd>일본 벼 품종, <b>수리 조합</b>·수리 시설, 화학 비료, 밭 → 논</dd>
+    <dt>결과</dt><dd><ul><li>생산은 계획만큼 <b>안 늘었는데 반출은 예정대로</b></li><li>1인당 쌀 소비 <b>감소</b> → 만주 <b>잡곡</b></li><li>수리 조합비·비룟값은 <b>농민 부담</b>, 지주는 소작료 인상</li></ul></dd></dl>
+    <p class="pt">“쌀 소비량 증가” → 오답. 1940년대에 한 번 더 ‘재개’됨.</p></div>
+
+  <div class="sec"><span class="tag">민족 운동 ①</span><h3>국외 — 무장 투쟁과 의열 투쟁</h3></div>
+  <div class="ev"><div class="eh"><span class="yr">1920</span><h4>봉오동 전투 · 청산리 대첩</h4></div>
+    <dl><dt>배경</dt><dd>3·1 운동 후 <b>조직적 무장 투쟁</b> 필요. 서로 군정서·북로 군정서·대한 독립군이 압록강·두만강 건너 <b>국내 진공 작전</b> → 일본군이 근거지 공격</dd>
+    <dt>봉오동</dt><dd>1920. <b>6</b>. <b>홍범도</b>의 대한 독립군 등</dd>
+    <dt>청산리</dt><dd>1920. <b>10</b>. <b>김좌진의 북로 군정서</b> + 홍범도 부대 등. 간도 주민이 식량·군자금 지원(이범석 《우둥불》)</dd></dl>
+    <p class="pt">홍범도=대한 독립군, 김좌진=북로 군정서. 인물·부대 바꾸기 최다 출제.</p></div>
+  <div class="ev"><div class="eh"><span class="yr">1920~1920년대 중반</span><h4>간도 참변 → 자유시 참변 → 3부</h4></div>
+    <dl><dt>간도 참변</dt><dd>1920. 10.~1921 초, 청산리에 대한 <b>일본군의 보복</b> 학살·방화</dd>
+    <dt>이동</dt><dd>북만주 밀산에서 <b>대한 독립 군단</b> → 러시아 혁명 세력 지원 기대, 자유시로</dd>
+    <dt>자유시 참변</dt><dd>1921. 6. 부대 통합 중 <b>지휘권 갈등</b>(내부 원인)</dd>
+    <dt>재정비</dt><dd>만주로 돌아와 <b>참의부·정의부·신민부</b></dd></dl>
+    <p class="pt">간도 참변=일본군 보복 / 자유시 참변=내부 갈등.</p></div>
+  <div class="ev"><div class="eh"><span class="yr">1919~1926</span><h4>의열단과 〈조선 혁명 선언〉</h4></div>
+    <dl><dt>배경</dt><dd>3·1 운동 후 <b>암살·파괴</b>로 맞서는 의열 투쟁. 강우규·남자현·조명하 등의 의거.</dd>
+    <dt>의열단</dt><dd><b>김원봉</b>.<ul><li><b>김익상</b> — 조선 총독부</li><li><b>김상옥</b> — 종로 경찰서(1923)</li><li><b>김지섭</b> — 일본 왕궁(1924)</li><li><b>나석주</b> — 조선 식산 은행·동양 척식 주식회사(1926)</li></ul></dd>
+    <dt>선언</dt><dd><b>〈조선 혁명 선언〉(1923)</b>, 김원봉 요청으로 <b>신채호</b> 작성. <b>외교론·실력 양성론 비판</b>, 민중 직접 혁명(암살·파괴·폭동) → 의열단 지침</dd></dl>
+    <p class="pt">선언 필자는 신채호. 외교론을 ‘지지’ → 오답.</p></div>
+
+  <div class="sec"><span class="tag">민족 운동 ②</span><h3>임시 정부의 시련</h3></div>
+  <div class="ev"><div class="eh"><span class="yr">1921~1925</span><h4>침체 → 국민 대표 회의 → 개편</h4></div>
+    <dl><dt>침체</dt><dd>① <b>연통제·교통국</b> 붕괴 ② 외교 성과 부진 ③ 무장 투쟁론·외교론·실력 양성론 갈등 ④ 이승만의 <b>위임 통치 청원서</b>(국제 연맹 위임 통치 요청) → 이동휘·박용만 “독립 정신 훼손”</dd>
+    <dt>회의</dt><dd><b>국민 대표 회의(1923)</b>: <b>창조파</b>(해산·새 정부) vs <b>개조파</b>(존속·개조) → <b>결렬</b>, 독립운동가 대거 이탈</dd>
+    <dt>개편</dt><dd>1925 이승만 <b>탄핵</b> → <b>박은식</b> 제2대 임시 대통령 → <b>국무령제</b>, 집단 지도 체제</dd></dl>
+    <p class="pt">“국민 대표 회의로 성공적 개편” → 오답.</p></div>
+
+  <div class="sec"><span class="tag">민족 운동 ③</span><h3>국내 — 분화와 연대</h3></div>
+  <div class="ev"><div class="eh"><span class="yr">1920년대 초</span><h4>민족 운동의 분화</h4></div>
+    <dl><dt>배경</dt><dd>러시아 혁명·코민테른의 약소민족 지원 → 3·1 운동 전후 국내 <b>사회주의</b> 확산</dd>
+    <dt>내용</dt><dd><b>민족주의 / 사회주의</b> 두 진영으로 분화. 1925 서울에서 비밀리에 <b>조선 공산당</b>(1928 해체). 사회주의자들이 노동·농민·청년 운동 주도 → 일제는 치안 유지법으로 탄압.</dd></dl></div>
+  <div class="ev"><div class="eh"><span class="yr">1920~1923</span><h4>실력 양성 운동</h4></div>
+    <dl><dt>배경</dt><dd>“먼저 힘을 길러 독립 준비”. 회사령 폐지·일본 상품 관세 철폐 움직임 → 한국인 자본가 위기감</dd>
+    <dt>물산 장려</dt><dd>1920 <b>평양</b>, <b>조만식</b> 등 <b>조선 물산 장려회</b>. “<b>내 살림 내 것으로</b>”, “<b>조선 사람 조선 것</b>” → 전국 확산<br><b>한계</b>: 생산력 부족 → <b>가격 상승</b> → 외면, 사회주의 세력 “<b>자본가만의 이익</b>” 비판 → 쇠퇴</dd>
+    <dt>민립 대학</dt><dd>1923 <b>조선 민립 대학 기성회</b>, 한국인 본위 교육, <b>1천만 원</b> 모금 → 방해·자연재해 → 총독부 <b>경성 제국 대학</b> 설립으로 좌절</dd>
+    <dt>야학</dt><dd>학교에서 소외된 아동·농민·노동자·부녀자 대상</dd></dl></div>
+  <div class="ev"><div class="eh"><span class="yr">1924~</span><h4>자치 운동</h4></div>
+    <dl><dt>배경</dt><dd>실력 양성 운동이 성과를 못 냄</dd>
+    <dt>내용</dt><dd><b>이광수</b> 〈민족적 경륜〉(1924, 《동아일보》), 김성수·최린. “<b>허용하는 범위 내에서</b>” 자치 정부·의회 → 일제 지배를 <b>인정</b>한 타협 노선</dd>
+    <dt>반응</dt><dd>총독부가 분열 노리고 <b>부추김</b> / <b>비타협적 민족주의</b>·<b>사회주의</b> 모두 비판 → 좌절, 일부는 친일로</dd>
+    <dt>연결</dt><dd>함께 반대한 두 세력 → 신간회</dd></dl></div>
+  <div class="ev"><div class="eh"><span class="yr">1926</span><h4>6·10 만세 운동</h4></div>
+    <dl><dt>배경</dt><dd><b>순종</b> 서거</dd>
+    <dt>준비</dt><dd>천도교 등 <b>민족주의</b> + <b>조선 공산당</b> 중심 <b>사회주의</b> + 학생 단체</dd>
+    <dt>전개</dt><dd>계획 발각, 지도부 검거 → 발각 안 된 학생 단체(<b>조선 학생 과학 연구회</b>, 1925)가 예정대로 만세</dd>
+    <dt>의의</dt><dd>좌우가 <b>처음 손잡은 경험</b> → <b>민족 유일당 운동</b> → 신간회 / 학생이 주역으로</dd></dl></div>
+  <div class="ev"><div class="eh"><span class="yr">1927~1931</span><h4>신간회 · 근우회</h4></div>
+    <dl><dt>결성</dt><dd>1927, <b>비타협적 민족주의 + 사회주의</b>. 회장 <b>이상재</b>, 부회장 <b>홍명희</b>. 최대 <b>4만여 명</b>, 전국·만주·일본 지회 = <b>최대 규모 항일 단체</b></dd>
+    <dt>주장</dt><dd>식민 통치 <b>비판</b> / 한국인 <b>본위 교육</b> / <b>타협적 정치 운동 반대</b>. 강연회, 대중 운동 지원.</dd>
+    <dt>근우회</dt><dd>같은 1927, 여성판 좌우 연대. <b>김활란</b>(기독교계)+<b>허정숙</b>(사회주의). 차별 철폐, <b>조혼 폐지</b>, 봉건 인습·미신 타파, <b>임금 차별 철폐</b>, 산전·산후 임금</dd>
+    <dt>해소</dt><dd>광주 학생 항일 운동 때 민중 대회 계획 발각·간부 체포 → 새 집행부 <b>타협 노선</b>에 지회 반발 + <b>코민테른</b> 노선 변화로 <b>사회주의 세력이 해소 주장</b>(비타협적 민족주의는 반대) → <b>1931 해소</b></dd></dl>
+    <p class="pt">해소 주장 = 사회주의. “민족주의 세력이 이탈” → 오답.</p></div>
+  <div class="ev"><div class="eh"><span class="yr">1920년대 · 1929</span><h4>학생 운동과 광주 학생 항일 운동</h4></div>
+    <dl><dt>배경</dt><dd><b>민족 차별 교육</b> 반대, 교육 환경 개선 → <b>동맹 휴학</b> 급증(1927 김제 만경 보통학교: “조선 역사 가르쳐 달라” 거절 → 40여 명 동맹 휴학), 독서회 등 비밀 결사</dd>
+    <dt>1929</dt><dd><b>광주 학생 항일 운동</b> → 신간회 <b>진상 조사단</b> 파견, 전국화 위한 <b>민중 대회</b> 계획 → 사전 발각, 무산</dd>
+    <dt>공통점</dt><dd>6·10 만세와 함께 <b>학생이 주체</b></dd></dl>
+    <p class="pt">민중 대회는 ‘계획’만. “개최했다” → 오답.</p></div>
+
+  <div class="sec"><span class="tag">사회·문화</span><h3>도시, 대중문화, 대중 운동</h3></div>
+  <div class="ev"><div class="eh"><span class="yr">1920~30년대</span><h4>도시와 농촌의 변화</h4></div>
+    <dl><dt>도시</dt><dd>철도 중심지·항구에서 발달(1930년대 이후 북부 공업 도시). <b>신작로</b>, 전차·버스·자동차, 전신·전화, <b>백화점</b>. 경성 = 일본인 <b>남촌</b> / 한국인 <b>북촌</b>(대부분 초가)</dd>
+    <dt>빈민</dt><dd>도시 외곽 <b>토막민</b>(날품팔이·지게꾼·인력거꾼) / 산속 <b>화전민</b> / 국외 이주</dd>
+    <dt>원인</dt><dd>토지 조사 사업·산미 증식 계획 → 토지 상실, 고율 소작료·세금·빚</dd>
+    <dt>농촌</dt><dd>5일장 같은 <b>장시</b> = 거래·정보·오락(순회 극단, 영화)</dd></dl>
+    <p class="pt">“근대 도시 발달로 한국인 생활 향상” → 오답.</p></div>
+  <div class="ev"><div class="eh"><span class="yr">1920~30년대</span><h4>일상과 대중문화</h4></div>
+    <dl><dt>생활</dt><dd><b>모던 걸·모던 보이</b>(‘못된 걸·못된 보이’ 비판)</dd>
+    <dt>언론</dt><dd>《조선일보》·《동아일보》, 잡지 《개벽》·《신여성》·《별건곤》·《삼천리》 → 새 사상 소개, 민족 운동 지원 / 정간·압수·삭제</dd>
+    <dt>대중문화</dt><dd>축음기·음반 → 〈<b>사의 찬미</b>〉(윤심덕), 〈목포의 눈물〉, 〈눈물 젖은 두만강〉 / <b>1927 경성 방송국</b> / 신파극, 토월회·극예술 연구회, 무용가 <b>최승희</b> / <b>1926 나운규 〈아리랑〉</b>(단성사, 식민지 현실의 아픔)</dd></dl></div>
+  <div class="ev"><div class="eh"><span class="yr">1921~1929</span><h4>우리말·글과 문학</h4></div>
+    <dl><dt>한글</dt><dd>1921 <b>조선어 연구회</b>(주시경 제자들) → 음력 9월 29일 <b>‘가갸날’</b> = 한글날의 시초(광복 후 양력 10월 9일) → 조선어 학회로</dd>
+    <dt>문맹 퇴치</dt><dd>1929 《조선일보》 <b>문자 보급</b> “아는 것이 힘이다, 배워야 산다”, 《한글 원본》</dd>
+    <dt>저항 문학</dt><dd><b>이상화</b> 〈빼앗긴 들에도 봄은 오는가〉(1926)</dd></dl></div>
+  <div class="ev"><div class="eh"><span class="yr">1923~1929</span><h4>다양한 대중 운동</h4></div>
+    <dl><dt>청년</dt><dd>청년회(강연·토론·야학) → 사회주의 수용 → <b>조선 청년 총동맹</b>(1924)</dd>
+    <dt>소년</dt><dd><b>방정환</b>, <b>천도교 소년회</b>, ‘<b>어린이</b>’ 제안, 어린이날, 잡지 《어린이》</dd>
+    <dt>농민</dt><dd>사회주의 확산 + 식민지 지주제. <b>암태도 소작 쟁의</b>(1923~24, 전남): 경찰이 지주 편이었지만 <b>소작료 인하 성공</b> → 전국 자극 / 조선 노농 총동맹(1924) → 조선 농민 총동맹(1927)</dd>
+    <dt>노동</dt><dd>임금 인상·노동 시간 단축. <b>원산 총파업</b>(1929) = 최대 규모 노동 쟁의</dd>
+    <dt>형평</dt><dd>갑오개혁 뒤에도 백정 차별(호적에 붉은 점) → 1923 <b>진주</b> <b>조선 형평사</b>, “저울처럼 평등” → 언론·사회주의 지지로 확산, 호적 신분 표시 삭제. 반(反)형평 움직임도.</dd>
+    <dt>여성</dt><dd>‘신여성’ → <b>근우회</b>(1927)</dd></dl></div>
+  <div class="ev"><div class="eh"><span class="yr">1923</span><h4>국외 한인의 수난 ①</h4></div>
+    <dl><dt>일본</dt><dd>1910년대 후반부터 생활고로 이주, 저임금·차별. <b>간토 대지진</b>(1923) “한국인이 방화·살인” 허위 사실 → 군경 방관 속 <b>학살</b></dd></dl></div>
+
+  <div class="trap"><h4>1920년대가 아닌 것 (오답 선지)</h4><ul>
+    <li>헌병 경찰제, 조선 태형령, 《매일신보》만 발행 → 1910년대</li>
+    <li>토지 조사 사업, 회사령 ‘제정’(허가제) → 1910년대</li>
+    <li>남면북양, 농촌 진흥 운동, 조선 농지령 → 1930년대</li>
+    <li>창씨개명, 국가 총동원법, 동아·조선일보 폐간 → 1930~40년대</li>
+    <li>브나로드(1931), 한인 애국단·윤봉길(1931~32), 조선어 학회 사건(1942)</li></ul></div>
+  <button class="next" data-go="d30">1930~45로 →</button>
+</section>
+
+<!-- ══════════ 1930~45 ══════════ -->
+<section class="view" id="v-d30">
+  <div class="hero d30">
+    <div class="k">1930 – 1945</div>
+    <h2>침략 전쟁과 민족 말살기</h2>
+    <p>대공황 뒤 일본이 <b>전쟁으로 위기를 넘으려</b> 한 시기. 전반엔 <b>공업화·남면북양·농촌 진흥 운동</b>, <b>1937 중일 전쟁</b> 이후엔 한국인을 전쟁에 쓰려고 <b>민족 말살 + 전시 동원</b>. 사람·쌀·쇠붙이·이름·말까지 빼앗습니다.</p>
+  </div>
+  <div class="strip">
+    <span><i>1929</i>대공황</span><span><i>1931</i>만주 사변·신간회 해소·한인 애국단·브나로드·강주룡</span><span><i>1932</i>이봉창·윤봉길·농촌 진흥</span><span><i>1934</i>조선 농지령·진단 학회</span><span><i>1936</i>보호 관찰령</span><span><i>1937</i>중일 전쟁·강제 이주</span><span><i>1938</i>총동원법·교육령·지원병</span><span><i>1939</i>징용령</span><span><i>1940</i>창씨개명·신문 폐간</span><span><i>1941</i>태평양 전쟁·국민학교·예방 구금령</span><span><i>1942</i>조선어 학회 사건</span><span><i>1943</i>학도 지원병</span><span><i>1944</i>징병제</span>
+  </div>
+
+  <div class="sec"><span class="tag">배경</span><h3>대공황에서 전쟁으로</h3></div>
+  <div class="ev"><div class="eh"><span class="yr">1929~1945</span><h4>대공황 · 파시즘 · 일본의 침략</h4></div>
+    <dl><dt>대공황</dt><dd>1929 뉴욕 주가 폭락. 미국 <b>뉴딜</b>, 영국·프랑스 <b>블록 경제</b>로 극복</dd>
+    <dt>파시즘</dt><dd>산업 기반 약하고 식민지 적은 이탈리아·독일·일본 → 내부 결속과 <b>대외 침략</b></dd>
+    <dt>침략</dt><dd><b>1931 만주 사변</b>(만주국) → <b>1937 중일 전쟁</b> → 독일·이탈리아와 방공 협정 → 1939 2차 대전 → ‘<b>대동아 공영권</b>’으로 동남아 침략 → <b>1941 진주만 기습, 태평양 전쟁</b> → 1945 연합국 승리</dd></dl>
+    <p class="pt">뉴딜은 미국. “파시즘 국가가 뉴딜로 극복” → 오답. 순서 ‘만 → 중 → 태’.</p></div>
+
+  <div class="sec"><span class="tag">경제 ①</span><h3>1930년대 전반 — 공업화와 농촌 통제</h3></div>
+  <div class="ev"><div class="eh"><span class="yr">1930년대</span><h4>식민지 공업화 · 남면북양</h4></div>
+    <dl><dt>배경</dt><dd>대공황이 일본 경제 강타 → 만주 사변 → 한국을 농업 지대 만주와 공업 지대 일본 사이 <b>중간 지대</b>로</dd>
+    <dt>내용</dt><dd>지하자원·수력 풍부한 <b>북부</b> 중심, <b>일본 독점 자본</b> 주도. 노구치 재벌의 흥남 <b>조선 질소 비료 공장</b>(1927) → 흥남은 신흥 공업 도시 / 한국인 자본은 섬유·고무신 등 <b>소비재</b>·가내 공업</dd>
+    <dt>남면북양</dt><dd>방직 원료 확보: 남부 <b>면화</b>, 북부 <b>양</b></dd>
+    <dt>결과</dt><dd>노동자 늘었지만 임금·환경 <b>차별</b>, 이익은 일본 자본, <b>일본 종속 심화</b>, 환경 파괴</dd></dl>
+    <p class="pt">“공업화로 일본 종속 완화” → 오답.</p></div>
+  <div class="ev"><div class="eh"><span class="yr">1932 · 1934</span><h4>농촌 진흥 운동 · 조선 농지령</h4></div>
+    <dl><dt>배경</dt><dd>대공황으로 농민 생활 악화, <b>소작 쟁의 격화</b></dd>
+    <dt>농촌 진흥</dt><dd>1932~. 근검절약하면 자작농 된다고 선전 → 수탈 구조는 그대로, 가난을 <b>게으름·무지 탓</b>으로 → 효과 없음</dd>
+    <dt>농지령</dt><dd>1934. 소작 기간 <b>3년 이상</b>, 소작권 함부로 박탈 금지 / <b>한계</b>: <b>고율 소작료</b>·지세 전가는 그대로</dd></dl></div>
+
+  <div class="sec"><span class="tag">통치</span><h3>1937 이후 — 민족 말살 정책</h3></div>
+  <div class="ev"><div class="eh"><span class="yr">1937~1945</span><h4>황국 신민화</h4></div>
+    <dl><dt>목적</dt><dd>민족의식을 지우고 한국인을 <b>전쟁에 동원</b></dd>
+    <dt>구호</dt><dd><b>내선일체</b>(일본=조선, 차별 없어진다 선전) → <b>황국 신민</b>으로</dd>
+    <dt>의식</dt><dd><b>황국 신민 서사</b> 암송(일본에도 없던 것) / 매월 1일 애국일 <b>신사 참배</b> / 아침 <b>궁성 요배</b></dd>
+    <dt>교육</dt><dd>1938 조선 교육령 개정 → 학교 통합, <b>한국어·한국사 사실상 폐지</b>, 학교·관공서 한국어 금지 / 1941 <b>국민학교</b></dd>
+    <dt>이름</dt><dd>1940 <b>창씨개명</b> → 불응 시 식량 배급 제외, 자녀 입학 거부, 취업 불이익</dd>
+    <dt>언론</dt><dd>1940 《동아일보》·《조선일보》 <b>폐간</b></dd>
+    <dt>사상</dt><dd>1936 사상범 <b>보호 관찰령</b>(출소자 감시) / 1941 사상범 <b>예방 구금령</b>(죄 지을 ‘가능성’만으로 구금)</dd></dl>
+    <p class="pt">창씨개명 불이익에 ‘태형’ → 오답(태형은 1910년대).</p></div>
+
+  <div class="sec"><span class="tag">경제 ②</span><h3>1937 이후 — 전시 동원 체제</h3></div>
+  <div class="ev"><div class="eh"><span class="yr">1937~</span><h4>병참 기지화 · 전시 통제 경제</h4></div>
+    <dl><dt>내용</dt><dd>한국을 대륙 침략의 군수 물자 <b>병참 기지</b>로. <b>금속·기계·화학</b> 집중, 일본 독점 자본 주도</dd>
+    <dt>결과</dt><dd><b>소비재 산업 위축</b>, 군수에 못 낀 한국인 공장 폐업</dd></dl></div>
+  <div class="ev"><div class="eh"><span class="yr">1938</span><h4>국가 총동원법</h4></div>
+    <dl><dt>내용</dt><dd>전시에 <b>인적·물적 자원</b> 통제·운용. 제4조 <b>징용</b>, 제8조 물자 생산·배급·소비 명령</dd>
+    <dt>조직</dt><dd><b>국민정신 총동원 조선 연맹</b>(1938), 말단 <b>애국반</b>(가정 10호) — 감시·배급</dd></dl></div>
+  <div class="ev"><div class="eh"><span class="yr">1938~1945</span><h4>물적 수탈</h4></div>
+    <dl><dt>공출</dt><dd>석탄·철광석 + 농기구, <b>놋그릇·가마솥</b>, 교회 <b>종</b>, 사찰 <b>불상</b>까지</dd>
+    <dt>식량</dt><dd><b>산미 증식 계획 재개</b>(군량미) + <b>미곡 공출제</b>(헐값 강제 매입) + <b>식량 배급제</b></dd>
+    <dt>돈</dt><dd>강제 저축·국방헌금</dd></dl></div>
+  <div class="ev"><div class="eh"><span class="yr">1938~1945</span><h4>인적 수탈</h4></div>
+    <dl><dt>노동</dt><dd>모집·관 알선 → <b>국민 징용령(1939)</b>, 국외로만 <b>100만 명 이상</b>, 탄광·공사장·공장</dd>
+    <dt>군인</dt><dd>1938 육군 특별 <b>지원병제</b> → 1943 <b>학도 지원병제</b> → 1944 <b>징병제</b>(20만 명 이상, 2만 명 이상 전사)</dd>
+    <dt>여성</dt><dd><b>여자 근로 정신대</b> / 일본군 <b>‘위안부’</b>: 1930년대 초부터 위안소, 전쟁 확대로 조직적 <b>확대</b>, 중국·동남아 전선</dd></dl>
+    <p class="pt">‘지 → 학 → 징’. 위안부는 중일 전쟁 후 ‘시작’이 아니라 ‘확대’.</p></div>
+
+  <div class="sec"><span class="tag">민족 운동·문화</span><h3>끝까지 지킨 것들</h3></div>
+  <div class="ev"><div class="eh"><span class="yr">1931~1932</span><h4>신간회 해소 · 한인 애국단</h4></div>
+    <dl><dt>신간회</dt><dd>1931 해소(사회주의 세력 주장)</dd>
+    <dt>애국단</dt><dd>국민 대표 회의 뒤 임시 정부 <b>침체</b> → 1931 <b>김구</b>가 <b>한인 애국단</b></dd>
+    <dt>의거</dt><dd>1932 <b>이봉창</b> — 도쿄, 일왕 행렬 / 1932 <b>윤봉길</b> — 상하이 <b>훙커우 공원</b></dd>
+    <dt>결과</dt><dd>윤봉길 의거 → <b>중국 국민당 정부</b>가 임시 정부 지원 → 한중 연대의 발판</dd></dl>
+    <p class="pt">의열단=김원봉(1920년대), 한인 애국단=김구(1930년대).</p></div>
+  <div class="ev"><div class="eh"><span class="yr">1931~1942</span><h4>문맹 퇴치 · 한글 지키기</h4></div>
+    <dl><dt>브나로드</dt><dd>1931~ 《동아일보》, ‘<b>민중 속으로</b>’(러시아어). 문맹 퇴치·미신 타파·근검절약. 학생·청년이 야학·한글 강습소 → 일제가 <b>민족의식 고취</b> 이유로 중단</dd>
+    <dt>조선어 학회</dt><dd>조선어 연구회 계승 → <b>한글 맞춤법 통일안</b>, 표준어, 《<b>우리말 큰사전</b>》 추진</dd>
+    <dt>탄압</dt><dd><b>1942 조선어 학회 사건</b> → 회원 검거, 강제 해산, 사전 편찬 중단</dd></dl>
+    <p class="pt">조선일보 1929 문자 보급 / 동아일보 1931 브나로드. 조선어 학회 ≠ 조선사 편수회.</p></div>
+  <div class="ev"><div class="eh"><span class="yr">1920~1930년대</span><h4>역사 왜곡과 우리 역사학</h4></div>
+    <dl><dt>식민 사관</dt><dd>식민 통치 정당화: <b>타율성론</b>(주변국 지배로 이뤄진 역사) · <b>정체성론</b>(발전 없이 정체) · <b>당파성론</b>(붕당=당파 싸움). 총독부 <b>조선사 편수회</b> 《조선사》</dd>
+    <dt>민족주의</dt><dd><b>박은식</b> 《한국통사》·《한국독립운동지혈사》 / <b>신채호</b> 민족 주체성 / 1930년대 <b>정인보·안재홍</b> 등이 계승, <b>조선학 운동</b></dd>
+    <dt>사회 경제</dt><dd><b>백남운</b>: 한국사도 세계사의 보편적 발전 → <b>정체성론 반박</b></dd>
+    <dt>실증</dt><dd><b>진단 학회</b>(1934), 《진단 학보》</dd></dl>
+    <p class="pt">백남운이 반박한 건 ‘정체성론’.</p></div>
+  <div class="ev"><div class="eh"><span class="yr">1930년대~</span><h4>문학 · 노동 · 대중문화</h4></div>
+    <dl><dt>문학</dt><dd>저항: <b>심훈</b> 〈그날이 오면〉(1930), <b>이육사</b>·윤동주 / <b>친일 문학</b>도</dd>
+    <dt>노동</dt><dd>1931 평양 평원 고무 공장, 임금 삭감 반대 단식 파업 → <b>강주룡</b> <b>을밀대</b> 고공 농성</dd>
+    <dt>대중문화</dt><dd>중일 전쟁 이후 <b>침략 전쟁 선전 가요</b> 등 노골적 간섭</dd></dl></div>
+  <div class="ev"><div class="eh"><span class="yr">1937</span><h4>국외 한인의 수난 ②</h4></div>
+    <dl><dt>연해주</dt><dd>19세기 중반부터 함경도 농민 이주(‘카레이스키’), 1910년경 8만~10만, 독립운동 근거지</dd>
+    <dt>강제 이주</dt><dd>1937 소련이 일본 첩자 우려로 약 <b>17만 명</b>을 <b>중앙아시아</b>로 → 11,000여 명 사망 → 고려인 사회</dd>
+    <dt>일본</dt><dd>1930년대 가족 단위 이주로 한인 사회 형성 → 강제 동원으로 1940년 약 100만 → 1945년 약 200만 명 이상</dd></dl></div>
+
+  <div class="trap"><h4>1930~45년이 아닌 것 (오답 선지)</h4><ul>
+    <li>헌병 경찰제, 태형령, 제1차 조선 교육령 → 1910년대</li>
+    <li>치안 유지법 ‘제정’(1925), 동아·조선일보 ‘창간’ → 1920년대</li>
+    <li>산미 증식 계획 ‘처음 실시’(1920), 회사령 폐지 → 1920년대</li>
+    <li>신간회 ‘창립’, 6·10 만세, 물산 장려 운동 → 1920년대</li>
+    <li>의열단 김상옥·나석주 의거 → 1920년대</li></ul></div>
+  <button class="next" data-go="cmp">비교·짝으로 →</button>
+</section>
+
+<!-- ══════════ 비교·짝 ══════════ -->
+<section class="view" id="v-cmp">
+  <div class="hero all">
+    <div class="k">COMPARE</div>
+    <h2>같은 주제, 시기별로</h2>
+    <p>한 주제가 시기마다 어떻게 바뀌었는지 가로로 읽으세요. ‘순서 배열’ 문제는 여기서 나옵니다.</p>
+  </div>
+  <div class="tw"><table>
+    <tr><th>주제</th><th>1910년대</th><th>1920년대</th><th>1930~45</th></tr>
+    <tr><th>경찰</th><td>헌병 경찰</td><td>보통 경찰(수 증가)</td><td>—</td></tr>
+    <tr><th>탄압 법</th><td>범죄 즉결례(1910), 태형령(1912)</td><td>치안 유지법(1925)</td><td>보호 관찰령(1936), 국가 총동원법(1938), 예방 구금령(1941)</td></tr>
+    <tr><th>언론</th><td>전면 금지, 《매일신보》만</td><td>일부 허용, 동아·조선 창간(검열)</td><td>동아·조선 폐간(1940)</td></tr>
+    <tr><th>교육</th><td>1차 교육령(1911), 보통학교 4년</td><td>민립 대학 운동 → 경성 제국 대학</td><td>교육령 개정(1938) 한국어 폐지, 국민학교(1941)</td></tr>
+    <tr><th>참여 선전</th><td>중추원(자문)</td><td>도 평의회·부·면 협의회(자문)</td><td>도회·부회·읍회(일부 의결권)</td></tr>
+    <tr><th>토지·농업</th><td>토지 조사 사업</td><td>산미 증식 계획</td><td>농촌 진흥·농지령·남면북양 → 공출·배급, 산미 재개</td></tr>
+    <tr><th>회사·공업</th><td>회사령(허가제)</td><td>회사령 폐지(신고제)</td><td>북부 공업화 → 병참 기지화</td></tr>
+    <tr><th>무장 투쟁</th><td>국외 기지 건설</td><td>봉오동·청산리 → 간도·자유시 참변 → 3부</td><td>(05단원)</td></tr>
+    <tr><th>의열 투쟁</th><td>강우규(1919)</td><td>의열단(김원봉)</td><td>한인 애국단(김구)</td></tr>
+    <tr><th>한글·문맹</th><td>—</td><td>조선어 연구회(1921), 문자 보급(1929)</td><td>브나로드(1931), 조선어 학회 사건(1942)</td></tr>
+  </table></div>
+
+  <div class="sec"><span class="tag">짝</span><h3>헷갈리는 짝</h3></div>
+  <div class="pair"><div><em>3·1 운동</em>고종 서거, 1919, 태화관·탑골 공원</div><div><em>6·10 만세 운동</em>순종 서거, 1926, 좌우 첫 연대</div></div>
+  <div class="pair"><div><em>봉오동 전투</em>1920. 6., 홍범도, 대한 독립군</div><div><em>청산리 대첩</em>1920. 10., 김좌진, 북로 군정서</div></div>
+  <div class="pair"><div><em>간도 참변</em>일본군 보복 학살(1920~21)</div><div><em>자유시 참변</em>지휘권 내부 갈등(1921. 6.)</div></div>
+  <div class="pair"><div><em>의열단</em>김원봉 / 김익상·김상옥·김지섭·나석주</div><div><em>한인 애국단</em>김구 / 이봉창·윤봉길</div></div>
+  <div class="pair"><div><em>연통제</em>비밀 행정 조직</div><div><em>교통국</em>통신 기관</div></div>
+  <div class="pair"><div><em>창조파</em>임시 정부 해산, 새 정부</div><div><em>개조파</em>임시 정부 유지, 개조</div></div>
+  <div class="pair"><div><em>문자 보급 운동</em>《조선일보》 1929, “아는 것이 힘”</div><div><em>브나로드 운동</em>《동아일보》 1931, “민중 속으로”</div></div>
+  <div class="pair"><div><em>조선어 학회</em>맞춤법 통일안, 큰사전</div><div><em>조선사 편수회</em>《조선사》, 식민 사관(총독부)</div></div>
+  <div class="pair"><div><em>이상화</em>〈빼앗긴 들에도 봄은 오는가〉 1926</div><div><em>심훈</em>〈그날이 오면〉 1930</div></div>
+  <div class="pair"><div><em>원산 총파업</em>1929, 최대 노동 쟁의</div><div><em>강주룡</em>1931, 평원 고무 공장, 을밀대</div></div>
+  <div class="pair"><div><em>암태도 소작 쟁의</em>1923, 농민, 소작료 인하 성공</div><div><em>형평 운동</em>1923, 진주 백정, 차별 철폐</div></div>
+  <div class="pair"><div><em>보호 관찰령</em>1936, 출소자 감시</div><div><em>예방 구금령</em>1941, 가능성만으로 구금</div></div>
+
+  <div class="sec"><span class="tag">연도</span><h3>숫자 한 줄 암기</h3></div>
+  <div class="box">
+    <b>즉·교·태</b> 1910 즉결례 → 1911 교육령 → 1912 태형령<br>
+    <b>지·학·징</b> 1938 지원병 → 1943 학도 지원병 → 1944 징병<br>
+    <b>만·중·태</b> 1931 만주 사변 → 1937 중일 전쟁 → 1941 태평양 전쟁<br>
+    <b>38·39·40</b> 1938 총동원법 → 1939 징용령 → 1940 창씨개명·신문 폐간<br>
+    <b>26·27·29</b> 1926 6·10 만세 → 1927 신간회 → 1929 광주 학생<br>
+    <b>숫자</b> 취학률 91.5 : 3.7 / 회사 자본 17.0 → 12.7 / 신간회 4만 / 3·1 운동 100만 / 강제 이주 17만
+  </div>
+</section>
+</main>
+
+<script>
+const nav=document.getElementById("nav");
+function go(t){
+  document.querySelectorAll(".view").forEach(v=>v.classList.toggle("on",v.id==="v-"+t));
+  nav.querySelectorAll("button").forEach(b=>b.classList.toggle("on",b.dataset.t===t));
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+nav.querySelectorAll("button").forEach(b=>b.onclick=()=>go(b.dataset.t));
+document.querySelectorAll(".next").forEach(b=>b.onclick=()=>go(b.dataset.go));
+const hb=document.getElementById("hideBtn");
+hb.onclick=()=>{
+  document.body.classList.toggle("quiz");
+  hb.classList.toggle("on");
+  hb.textContent=document.body.classList.contains("quiz")?"전체 보기":"가리기";
+  document.querySelectorAll(".ev.show").forEach(e=>e.classList.remove("show"));
+};
+document.addEventListener("click",e=>{
+  if(!document.body.classList.contains("quiz")) return;
+  const ev=e.target.closest(".ev"); if(ev) ev.classList.toggle("show");
+});
+</script>
+</body>
+</html>
